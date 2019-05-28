@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install:
+    commands:
+      - echo Install phase started on `date`
+    finally:
+      - echo Install phase finilised on `date`
+  pre_build:
+    commands:
+      - echo Pre_build phase started on `date`
+    finally:
+      - echo Pre_build phase finilised on `date`
+  build:
+    commands:
+      - echo Build phase started on `date`
+    finally:
+      - echo Build phase finilised on `date`
+  post_build:
+    commands:
+      - echo Post_build phase started on `date`
+    finally:
+      - echo Post_build phase finilised on `date`
+artifacts:
+  files:
+    - '**/*'
